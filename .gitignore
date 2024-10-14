@@ -1,3 +1,4 @@
 smokingenv/
 smoking_history_prediction.egg-info/
 notebooks/
+**/__pycache__/
