@@ -21,8 +21,7 @@ class DataIngestion:
         try:
             logging.info(f"Exporting data from mongodb")
             smoking_dataset = SmokingDrinkingData()
-            dataframe = smoking_dataset.mongo_collection_to_dataframe(collection_name=
-                                                                   self.data_ingestion_config.collection_name)
+            dataframe = smoking_dataset.mongo_collection_to_dataframe(collection_name=self.data_ingestion_config.collection_name)
             logging.info(f"Shape of dataframe: {dataframe.shape}")
             exported_data_file_path  = self.data_ingestion_config.exported_csv_file_path
             dir_path = os.path.dirname(exported_data_file_path)
@@ -57,8 +56,7 @@ class DataIngestion:
             self.train_test_split(dataframe)
             logging.info("Performed train test split on the dataset")
             logging.info("Exited initiate_data_ingestion method of Data_Ingestion class")
-            data_ingestion_artifact = DataIngestionArtifact(trained_file_path=self.data_ingestion_config.training_file_path,
-            test_file_path=self.data_ingestion_config.testing_file_path)
+            data_ingestion_artifact = DataIngestionArtifact(train_file_path=self.data_ingestion_config.training_file_path, test_file_path=self.data_ingestion_config.testing_file_path)
             logging.info(f"Data ingestion artifact: {data_ingestion_artifact}")
             return data_ingestion_artifact
         except Exception as e:

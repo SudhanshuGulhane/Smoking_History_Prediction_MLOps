@@ -3,7 +3,7 @@ from urllib.parse import quote_plus
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 username = quote_plus(os.getenv("username"))
 password = quote_plus(os.getenv("password"))
