@@ -1,0 +1,53 @@
+columns:
+  - age: int
+  - height: int
+  - weight: int
+  - waistline: int
+  - sight_left: int
+  - sight_right: int
+  - hear_left: int
+  - hear_right: int
+  - SBP: int
+  - DBP: int
+  - BLDS: int
+  - tot_chole: int
+  - HDL_chole: int
+  - LDL_chole: int
+  - triglyceride: int
+  - hemoglobin: int
+  - urine_protein: int
+  - serum_creatinine: int
+  - SGOT_AST: int
+  - SGOT_ALT: int
+  - gamma_GTP: int
+  - SMK_stat_type_cd: int
+  - sex: category
+  - DRK_YN: category
+
+numerical_columns:
+  - age
+  - height
+  - weight
+  - waistline
+  - sight_left
+  - sight_righ
+  - hear_left
+  - hear_right
+  - SBP
+  - DBP
+  - BLDS
+  - tot_chole
+  - HDL_chole
+  - LDL_chole
+  - triglyceride
+  - hemoglobin
+  - urine_protein
+  - serum_creatinine
+  - SGOT_AST
+  - SGOT_ALT
+  - gamma_GTP
+  - SMK_stat_type_cd
+
+categorical_columns:
+  - sex
+  - DRK_YN
